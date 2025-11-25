@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Position no CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container"></div>
+    <h1>Position no CSS</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#static">Static</a>
+        </li>
+        <li>
+          <a href="#relative">Relative</a>
+        </li>
+        <li>
+          <a href="#absolute">Absolute</a>
+        </li>
+        <li>
+          <a href="#fixed">Fixed</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <section id="static">
+        <h2>Position: static</h2>
+  
+        <p>No CSS, <strong>position: static</strong> é o valor padrão de posicionamento dos elementos. Quando um elemento está com position: static, ele segue o fluxo normal da página, ou seja, aparece exatamente na ordem em que foi escrito no código, sem permitir ajustes manuais de posição usando propriedades como top, left, right ou bottom. Esse tipo de posicionamento é ideal quando você quer que o layout se organize naturalmente, sem deslocamentos personalizados. É o comportamento mais simples e geralmente o ponto de partida antes de aplicar outros tipos de posicionamento, como relative, absolute ou fixed.</p>
+      </section>
+
+      
+      <section id="relative">
+        <h2>Position: relative</h2>
+        <div></div>
+        <div class="blue"></div>
+        <div></div>
+
+        <p>No CSS, <strong>position: relative</strong> permite que um elemento mantenha seu espaço original no fluxo da página, mas possa ser deslocado a partir dessa posição usando propriedades como <mark>top, left, right e bottom.</mark> Isso significa que o elemento continua ocupando o mesmo lugar estruturalmente, mas sua aparência na tela pode ser ajustada alguns pixels para qualquer direção. Além disso, quando um elemento está com position: relative, ele passa a servir como referência para elementos posicionados como absolute dentro dele, facilitando a criação de layouts mais controlados e precisos.</p>
+
+
+      </section>
+
+      <section id="absolute">
+        <h2>Position: absolute</h2>
+        <div></div>
+        <div class="blue"></div>
+        <div></div>
+
+        <p>No CSS, <strong>position: absolute</strong> <mark>permite que um elemento seja removido do fluxo normal da página e posicionado livremente usando top, left, right e bottom.</mark> Ele se desloca em relação ao ancestral mais próximo que tenha um posicionamento definido (relative, absolute, fixed ou sticky); caso não exista, usa o próprio documento como referência. Isso dá ao desenvolvedor um controle muito preciso sobre a localização do elemento, possibilitando criar layouts sobrepostos, caixas flutuantes e componentes que precisam ficar exatamente em um ponto da tela. Porém, como o elemento deixa de ocupar espaço no fluxo, é importante usar esse tipo de posicionamento com cuidado para evitar que outros elementos se sobreponham de forma indesejada.</p>
+
+
+      </section>
+
+      <section id="fixed">
+        <h2>Position: fixed</h2>
+
+        <p>No CSS, <strong>position: fixed</strong> faz com que um <mark>elemento fique completamente fixo em relação à janela do navegador, independente de rolagem.</mark> Isso significa que, mesmo que o usuário deslize a página para cima ou para baixo, o elemento permanece sempre no mesmo lugar da tela. Ele pode ser posicionado usando top, left, right e bottom, e é removido do fluxo normal do layout, não ocupando espaço entre os outros elementos. Esse tipo de posicionamento é muito usado em menus fixos, botões flutuantes, barras de navegação e notificações que precisam estar sempre visíveis, proporcionando uma experiência mais prática e acessível ao usuário.</p>
+      </section>
+
+
+    </div>
+  </main>
+  <a href="" class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
+  </a>
+</body>
+</html>
+
+
